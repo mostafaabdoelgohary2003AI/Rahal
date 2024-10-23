@@ -35,7 +35,7 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
   <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+  <img src="C:\Users\user\Downloads\angular_gradient.png" height="40" alt="bootstrap logo"  />
   <img width="12" />
   <img src="https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif" height="40" alt="angularjs logo"  />
   <img width="12" />
