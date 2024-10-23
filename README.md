@@ -11,7 +11,7 @@
 ###
 
 <p align="left">
-<ol>
+<ul>
   <li><span style="color: goldenrod;"></span> <strong> Destination Exploration: Browse through a wide range of Egyptian destinations, each with detailed descriptions, images, and relevant information. </strong></li>
   <br>
   <li><span style="color: goldenrod;"></span> <strong> Attraction Search: Discover popular tourist attractions, including historical sites, museums, natural wonders, and cultural experiences. </strong></li>
@@ -19,7 +19,7 @@
   <li><span style="color: goldenrod;"></span> <strong> Accommodation Booking: Easily search for and book hotels, resorts, and other accommodation options tailored to your preferences and budget. </strong></li>
   <br>
   <li><span style="color: goldenrod;"></span> <strong> Tour Packages: Explore pre-planned tour packages that cover different regions and interests, providing convenient travel itineraries. </strong></li>
-</ol>
+</ul>
 
 ###
 
