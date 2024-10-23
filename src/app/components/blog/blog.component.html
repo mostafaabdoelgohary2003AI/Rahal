@@ -1,0 +1,83 @@
+<section class="blog">
+  <div class="container mt-4">
+    <div class="row d-flex justify-content-between">
+      <div class="col-md-4">
+        <app-sidebar></app-sidebar>
+      </div>
+      <div class="posts col-md-8">
+        <h3 class="text-center mb-3">Your Travel Posts</h3>
+
+        <!-- Modal -->
+        <!-- Modal لإضافة منشور جديد -->
+        <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="newPostModalLabel">Add New Post</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form (ngSubmit)="addPost()">
+                  <div class="mb-3">
+                    <label for="user" class="form-label">User</label>
+                    <input type="text" class="form-control" id="user" [(ngModel)]="newPost.user" name="user" required
+                      disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="content" class="form-label">Content</label>
+                    <textarea class="form-control" id="content" rows="3" [(ngModel)]="newPost.content" name="content"
+                      required></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="image" class="form-label">Upload Image</label>
+                    <input type="file" class="form-control" (change)="onFileSelected($event)">
+                    <img *ngIf="newPost.image" [src]="newPost.image" alt="Selected Image" class="img-thumbnail mt-3"
+                      width="200" height="200px">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add Post</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- عرض المنشورات -->
+        <div class="row">
+          <div class="col-md-12" *ngFor="let post of posts">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5>{{ post.user }}</h5>
+                <p>{{ post.content }}</p>
+                <div class="imge">
+                  <img *ngIf="post.image" [src]="post.image" class="img-fluid mb-3" alt="{{ post.user }}">
+                </div>
+                <div class="cont d-flex justify-content-between p-3">
+                  <i [class]="post.liked ? 'fa-solid fa-heart' : 'fa-regular fa-heart'" (click)="toggleLike(post)"
+                    class="like-icon">
+                    <span class="ms-1">{{ post.likes }}</span>
+                  </i>
+                  <button class="btn bg-danger text-light" (click)="deletePost(post.id)">Delete Post</button>
+                </div>
+                <!-- تعليقات -->
+                <div *ngFor="let comment of post.comments">
+                  <p><strong>{{ comment.user }}:</strong> {{ comment.text }}</p>
+                </div>
+
+                <!-- إضافة تعليق -->
+                <div class="input-group mt-3">
+                  <input type="text" class="form-control" placeholder="Add a comment..." [(ngModel)]="newComment">
+                  <button class="btn" (click)="addComment(post.id)">Comment</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</section>

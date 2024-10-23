@@ -1,0 +1,20 @@
+.side{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(0, 0, 0,.4);
+  border-radius: 15px;
+  text-align: center;
+
+}
+hr{
+  color: white;
+}
+button{
+  width: 100%;
+}
+.nav-item a{
+  background-color: #e6af5d;
+}
+.nav-item a:hover{
+  background-color: rgb(255, 186, 33, 0.5);
+}

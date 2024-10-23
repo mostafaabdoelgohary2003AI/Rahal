@@ -1,0 +1,138 @@
+<!--landing-->
+<section class="landing">
+  <video autoplay muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay">
+    <div class="landing-contant ">
+      <h1 class="scrollbutton">Hello There</h1>
+      <p class="scrollleft">We are here at your service to explore Egypt...</p>
+      <h4 class="scrollleft">Let's go!</h4>
+      <a href="#mokdma"><i class="fa-solid fa-arrow-down scrollright"></i></a>
+    </div>
+  </div>
+</section>
+<!--End landing-->
+
+<!--mokdma-->
+<section class="mokdma" id="mokdma">
+  <div class="container">
+    <div class="mokdma-text text-center">
+      <h1 class="lead scrollright" id="lead">Where To Go?</h1>
+      <h3 class="lead scrollleft">Pick your destination and start your Egypt...experience now</h3>
+    </div>
+    <div class="mokdma-contant justify-content-center">
+      <div class="titel row mb-4">
+        <h3 class="lead scrollleft">Adventure:</h3>
+      </div>
+      <swiper-container class="mySwiper scrollbutton" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30" >
+        <swiper-slide *ngFor="let discover of discoverData">
+          <div class="card shadow">
+            <div class="imge">
+              <img [src]="discover.imgs[0]" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{discover.title}}</h5>
+              <p class="card-text">{{discover.description}}</p>
+              <!-- Discover Button -->
+              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal" class="btn"
+                (click)="setModalData(discover)">Discover</a>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
+</section>
+<!--End mokdma-->
+
+<!--Explor-->
+<section class="Explor" id="Explor">
+  <div class="container">
+    <div class="Explor-contant justify-content-center row">
+      <div class="titel row mb-4">
+        <h3 class="lead scrollleft">Explore Ancient Egypt:</h3>
+      </div>
+      <swiper-container class="mySwiper scrollbutton" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30">
+        <swiper-slide *ngFor="let discover of discoverData1">
+          <div class="card">
+            <div class="imge">
+              <img [src]="discover.imgs[0]" class="card-img-top" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{discover.title}}</h5>
+              <p class="card-text">{{discover.description}}</p>
+              <!-- Discover Button -->
+              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal" class="btn"
+                (click)="setModalData(discover)">Discover</a>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
+</section>
+<!--End Explor-->
+
+<section class="Explor1" id="Explor1">
+  <div class="container">
+    <div class="Explor1-contant justify-content-center row">
+      <div class="titel row mb-4">
+        <h3 class="lead scrollleft">Explore Modern Egypt:</h3>
+      </div>
+      <swiper-container class="mySwiper scrollbutton" pagination="true" pagination-clickable="true" navigation="true"
+        space-between="30">
+        <swiper-slide *ngFor="let discover of discoverData2">
+          <div class="card">
+            <div class="imge">
+              <img [src]="discover.imgs[0]" class="card-img-top img-fluid" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">{{discover.title}}</h5>
+              <p class="card-text">{{discover.description}}</p>
+              <!-- Discover Button -->
+              <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#productModal" class="btn"
+                (click)="setModalData(discover)">Discover</a>
+            </div>
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </div>
+  </div>
+</section>
+<!--End Explor-->
+
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document"> <!-- التحكم في حجم النافذة -->
+    <div class="modal-content"> <!-- تحديد ارتفاع المحتوى -->
+      <div class="modal-header d-flex justify-content-between">
+        <h5 class="modal-title" id="productModalLabel">{{modalData.title}}</h5>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>{{modalData.description}}</p>
+        <ul>
+          <li *ngFor="let feature of modalData.features">
+            {{feature}}
+          </li>
+        </ul>
+        <div>
+          <swiper-container class="cards" pagination="true" pagination-dynamic-bullets="true" autoplay-delay="2500" >
+            <swiper-slide *ngFor="let img of modalData.imgs">
+              <img [src]="img" class="img-fluid" [alt]="img">
+            </swiper-slide>
+          </swiper-container>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+

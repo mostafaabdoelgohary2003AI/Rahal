@@ -1,0 +1,14 @@
+footer p{
+  color: #9b9b9b;
+}
+footer a i{
+  color: white;
+  transition: .5s ease;
+}
+footer a i:hover{
+  color: #e6af5d;
+}
+footer .social{
+  text-align: center;
+}
+

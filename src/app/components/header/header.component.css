@@ -1,0 +1,39 @@
+
+body{
+  height: 1000vh;
+}
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  border: none;
+}
+.navbar-toggler{
+  color: white;
+  border: none;
+}
+.navbar .nav-item a:hover{
+  color:#e6af5d ;
+}
+.dropdown-menu{
+  background-color: rgb(0, 0, 0,.5);
+}
+.dropdown-menu a{
+  color: white;
+}
+.dropdown-menu a:hover{
+  background-color: rgb(0, 0, 0,.5);
+}
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
+.body-nav{
+  background-color: rgb(0, 0, 0,.5);
+  border-radius: 50px;
+  color: white;
+}
+.navbar .navbar-nav .nav-link{
+  color: white;
+}

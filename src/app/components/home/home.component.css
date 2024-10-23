@@ -1,0 +1,230 @@
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+}
+
+.landing video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.landing .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.landing .landing-contant {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 450px;
+  max-width: 100%;
+}
+
+.landing .landing-contant h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.landing .landing-contant p {
+  font-size: 16px;
+  line-height: 4;
+}
+
+.landing .landing-contant h4 {
+  margin-bottom: 40px;
+}
+
+.landing .landing-contant i {
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.landing .landing-contant i:hover {
+  color: #e6af5d;
+}
+
+/*mokdma*/
+.lead {
+  color: #aaa;
+}
+
+.mokdma {
+  height: 150vh;
+  background-color: white;
+}
+
+.mokdma-text {
+  padding-top: 50px;
+}
+
+.mokdma-text h1 {
+  font-size: 30px;
+  font-weight: bolder;
+
+  color: #e6af5d;
+}
+
+.mokdma-text h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.mokdma-contant {
+  padding-top: 50px;
+}
+
+.mokdma-contant .titel h3 {
+  font-weight: 700;
+}
+
+.card {
+  position: relative;
+  height: 450px;
+  width: 450px;
+  border: none;
+  margin-bottom: 50px;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+.card .imge {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card-img-top {
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  border: none;
+  transition: .5s ease;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #e6af5d;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.card-text {
+  max-height: 200px;
+  overflow: hidden;
+  padding-bottom: 40px;
+
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.2);
+}
+
+.card:hover {
+  box-shadow: 0px 5px 25px 1px rgba(230, 175, 93, 1);
+}
+
+.card:hover .btn {
+  opacity: 1;
+}
+
+
+.Explor {
+  height: 100vh;
+  background-color: white;
+}
+
+.Explor-contant .titel h3 {
+  font-weight: 700;
+}
+
+.Explor1 {
+  height: 100vh;
+  background-color: white;
+  margin-bottom: 50px;
+
+}
+
+.Explor1-contant .titel h3 {
+  font-weight: 700;
+}
+
+
+
+
+/*swiper*/
+swiper-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*modal*/
+.modal-title {
+  color: #e6af5d;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.modal-content .close {
+  background-color: rgba(0, 0, 0, 0.0);
+  color: white;
+  border: none;
+}
+
+/*swiper in module*/
+.cards {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cards swiper-slide {
+  height: 400px;
+}

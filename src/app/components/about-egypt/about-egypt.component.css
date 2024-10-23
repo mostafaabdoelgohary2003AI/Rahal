@@ -1,0 +1,401 @@
+ .header-section {
+     height: 70vh;
+     width: 100%;
+     color: #fff;
+     text-align: center;
+     overflow: hidden;
+ }
+
+ .container {
+     position: relative;
+     text-align: center;
+     color: white;
+ }
+
+ .text-all {
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: rgba(0, 0, 0, 0.4);
+     padding: 20px;
+     border-radius: 10px;
+ }
+
+ .text-all h1 {
+     font-size: 50px;
+     font-weight: bold;
+     margin: 0;
+     padding: 0;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+ }
+
+ .text-all p {
+     font-size: 20px;
+ }
+
+ .image {
+     overflow: hidden;
+ }
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+     .text-all h1 {
+         font-size: 40px;
+         /* Smaller font size for tablets and smaller screens */
+     }
+
+     .text-all p {
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .text-all h1 {
+         font-size: 30px;
+         /* Even smaller font size for mobile phones */
+     }
+
+     .text-all p {
+         font-size: 14px;
+     }
+ }
+
+ .timeline-section {
+     background-color: #dfad24;
+     padding: 50px 0;
+ }
+
+ .timeline-section h2 {
+     font-size: 36px;
+     font-weight: bold;
+     margin-bottom: 50px;
+ }
+
+ /* Timeline Styles */
+ .timeline {
+     position: relative;
+     max-width: 800px;
+     margin: auto;
+     padding: 0 20px;
+     border-left: 4px solid #ffbb00;
+     ;
+     /* Timeline left border */
+ }
+
+ .timeline-item {
+     position: relative;
+     padding: 20px 40px;
+     margin-bottom: 40px;
+     background: white;
+     border-radius: 8px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+ }
+
+ .timeline-item:hover {
+     transform: translateX(10px);
+     /* Slide effect on hover */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+ }
+
+ .timeline-item::before {
+     content: ' ';
+     position: absolute;
+     top: 20px;
+     left: -14px;
+     width: 10px;
+     height: 10px;
+     background-color: #ffbb00;
+     border-radius: 50%;
+ }
+
+ /* Timeline Date Style */
+ .timeline-date {
+     position: absolute;
+     top: 20px;
+     left: -180px;
+     font-size: 16px;
+     color: #000;
+     transition: all 0.3s ease-in-out;
+ }
+
+ @media (max-width:760px) {
+     .timeline-date {
+         position: relative;
+         left: 0;
+         text-align: center;
+         margin-bottom: 20px;
+         font-size: 14px;
+     }
+ }
+
+ /* Animation Effects */
+ .timeline-item.animate-fade-up {
+     opacity: 0;
+     transform: translateY(30px);
+     animation: fadeUp 0.8s ease-in-out forwards;
+     animation-delay: 0.2s;
+     /* Delay to animate each card */
+ }
+
+ /* Keyframe Animation */
+ @keyframes fadeUp {
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+
+ .history-section h2 {
+     color: #e7af17;
+ }
+
+ .timeline-content {
+     color: #000;
+ }
+
+ .about-egypt-section {
+     padding: 50px;
+     background: linear-gradient(145deg, #ffffff, #e6e6e6);
+     border-radius: 15px;
+     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+     color: #2c3e50;
+     transition: 0.3s ease-in-out;
+ }
+
+ .about-egypt-section h1 {
+     font-size: 36px;
+     font-weight: bold;
+     color: white;
+     background: #e7af17;
+     text-transform: uppercase;
+     margin-bottom: 30px;
+ }
+
+ .about-egypt-section h2 {
+     font-size: 28px;
+     color: #e7af17;
+     display: inline-block;
+     margin-bottom: 20px;
+ }
+
+ .about-egypt-section p,
+ .about-egypt-section ul {
+     font-size: 18px;
+     line-height: 1.6;
+     color: #000;
+     /* max-width: 800px;
+    margin:0 auto;*/
+ }
+
+ .about-egypt-section ul {
+     list-style-type: none;
+     padding: 0;
+ }
+
+ .about-egypt-section ul li {
+     margin-bottom: 10px;
+     padding-left: 20px;
+     position: relative;
+     font-size: 18px;
+ }
+
+ .about-egypt-section ul li ::before {
+     content: '✓';
+     color: #e7af17;
+     font-size: 24px;
+     margin-right: 5px;
+ }
+
+
+
+ .cultural-highlights {
+     background-color: #f9f9f9;
+     padding: 50px 20px;
+     border-radius: 15px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .cultural-highlights h2 {
+     font-size: 36px;
+     color: #000;
+     text-transform: uppercase;
+     font-weight: bold;
+     margin-bottom: 30px;
+ }
+
+ .carousel-inner {
+     max-width: 600px;
+     margin: auto;
+ }
+
+ .highlight-card {
+     background-color: white;
+     padding: 20px;
+     border-radius: 10px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ .highlight-card img {
+     width: 100%;
+     height: 250px;
+     object-fit: cover;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+ }
+
+ .highlight-card h3 {
+     font-size: 24px;
+     color: #e7af17;
+     margin-top: 20px;
+ }
+
+
+ .highlight-card p {
+     font-size: 16px;
+     color: #000;
+     margin-top: 10px;
+     line-height: 1.6;
+ }
+
+ .carousel-control-prev,
+ .carousel-control-next {
+     width: 5%;
+ }
+
+ .carousel-control-prev-icon,
+ .carousel-control-next-icon {
+     background-color: #e7af17;
+     border-radius: 50%;
+     padding: 10px;
+ }
+
+ .carousel-control-prev-icon:hover,
+ .carousel-control-next-icon:hover {
+     background-color: #000;
+ }
+
+ .highlight-card img:hover {
+     transform: scale(1.2);
+ }
+
+
+
+ #gallery {
+     background-color: #f8f9fa;
+     padding: 40px 0;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+ }
+
+ #gallery h2 {
+     font-size: 2.5rem;
+     color: #343a40;
+ }
+
+
+ .card {
+     border: none;
+     transition: 0.3s ease;
+     overflow: hidden;
+     margin-bottom: 20px;
+     border-radius: 10px;
+
+
+ }
+
+ .card:hover {
+     transform: scale(1.05);
+ }
+
+ .card-img-top {
+     max-height: 200px;
+     border-radius: 10px 10px 0 0;
+     object-fit: cover;
+
+ }
+
+ .aklat img {
+     transition: .5s ease;
+ }
+
+ .aklat img:hover {
+     transform: scale(1.2);
+ }
+
+ .card-body {
+     text-align: center;
+ }
+
+ .card-text {
+     font-size: 1rem;
+     /*Set a font size for captions */
+     color: #555;
+ }
+
+ .card-img-top {
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
+ }
+
+ .card-title {
+     font-weight: bold;
+     font-size: 1.4rem;
+ }
+
+ .card-text {
+     font-size: 1rem;
+     color: black;
+ }
+
+ .btn-secondary {
+     background-color: #e7af17;
+     border: none;
+     font-weight: bold;
+     padding: 10px 20px;
+     border-radius: 30px;
+     transition: background-color 0.3s ease;
+ }
+
+ .btn-secondary:hover {
+     background-color: #e7af17;
+ }
+
+ .card-body {
+     padding: 20px;
+ }
+
+ .card .collapse {
+     padding-top: 10px;
+ }
+
+ .card .card-body .collapse .card-body {
+     background-color: white;
+     font-size: 0.9rem;
+     border-radius: 8px;
+     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ .container {
+     max-width: 1200px;
+ }
+
+ .btn-secondary,
+ .btn-secondary:hover,
+ .btn-secondary:active,
+ .btn-secondary:visited {
+     background-color: #e7af17 !important;
+     border: none;
+ }
+
+ .food-title {
+     font-size: 36px;
+     font-weight: bold;
+     color: #e7af17;
+     margin-bottom: 30px;
+     animation: fadeUp 0.8s ease-in-out forwards;
+ }

@@ -1,0 +1,166 @@
+section {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* buttom */
+.bg-primary {
+    background-color: #e6af5d !important;
+}
+
+.btn:not(.nav-btns button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(199, 196, 196);
+}
+
+.btn:not(.nav-btns button):hover {
+    background-color: #e6af5d;
+    color: #fff;
+
+}
+
+/* text color */
+.text-primary {
+    color: #e6af5d !important;
+}
+
+/*  who we are  */
+#who img {
+    padding-top: 50px;
+}
+
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    margin-left: -30px;
+    background-color: #e6af5d;
+    transform: translateY(-15%);
+}
+
+
+
+/* Partner */
+.Partner-list {
+    margin: 10px auto;
+    width: 50%;
+}
+
+.partner-img {
+    position: relative;
+
+}
+
+.partner-img img {
+    transition: all 0.3s ease;
+
+}
+
+.partner-img:hover img {
+    transform: scale(1.2);
+}
+
+
+/* Media */
+#media {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-bottom: 50px;
+}
+
+
+
+.media-content h2 {
+    font-size: 24px;
+
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social i {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social a i:hover {
+    background-color: #e6af5d;
+    box-shadow: 0 0 15px #e6af5d;
+}
+
+.social span:hover {
+    color: #e6af5d !important;
+}
+
+/* blog */
+.card img {
+    height: 400px;
+}
+
+/* about */
+#about {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+/* news letter */
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: #e6af5d;
+    color: #fff;
+    border-color: var(--pink);
+}
+
+#newsletter .btn:hover {
+    background-color: black;
+    border-color: black;
+}
+
+
+/* media Quaries */
+@media screen and (max-width: 992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+
+}
+
+img {
+    border-radius: 15px;
+}

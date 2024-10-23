@@ -1,0 +1,40 @@
+<section class="all-posts">
+  <div class="container mt-4">
+    <h3 class="mb-3">All Posts</h3>
+
+    <!-- عرض كل المنشورات -->
+    <div class="row justify-content-center">
+      <div class="col-md-8" *ngFor="let post of posts">
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>{{ post.user }}</h5>
+            <p>{{ post.content }}</p>
+            <div class="imge">
+            <img *ngIf="post.image" [src]="post.image" class="img-fluid mb-3" alt="{{ post.user }}">
+            </div>
+            <div class="cont d-flex justify-content-between p-3">
+              <i [class]="post.liked ? 'fa-solid fa-heart' : 'fa-regular fa-heart'" (click)="toggleLike(post)"
+                class="like-icon">
+                <span class="ms-1">{{ post.likes }}</span>
+              </i>
+            </div>
+            <!-- تعليقات -->
+            <div *ngFor="let comment of post.comments">
+              <p><strong>{{ comment.user }}:</strong> {{ comment.text }}</p>
+            </div>
+
+            <!-- إضافة تعليق -->
+            <!-- إضافة تعليق -->
+            <div class="input-group mt-3">
+              <input type="text" class="form-control" placeholder="Add a comment..." [(ngModel)]="newComment">
+              <button class="btn" (click)="addComment(post.id)">Comment</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>

@@ -1,0 +1,38 @@
+section{
+  padding-top: 50px;
+}
+.cont i:hover
+{
+  color: #e6af5d;
+}
+.fa-solid{
+  color: #e6af5d;
+}
+.imge {
+  display: flex;
+  justify-content: center;
+  align-items: center;border-radius: 16px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.imge img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.input-group .btn{
+  background-color: #e6af5d;
+  color: white;
+}
+.card{
+  border: 1px solid #e6af5d;
+}
+input{
+  background-color: beige;
+  border:none;
+}
+input:focus{
+  box-shadow: 0 0 1px 2.5px rgba(255, 186, 33, 0.5);
+  border: none;
+}

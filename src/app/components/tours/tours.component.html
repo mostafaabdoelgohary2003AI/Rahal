@@ -1,0 +1,35 @@
+
+
+<section class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center mb-5">
+           <h1 class="display-4 font-weight-bolder lead scrollright">You'll fall in love with Egypt</h1>
+            <p class="lead scrollleft">Explore Egypt from Alexandria to Aswan. </p>
+        </div>
+      </div>
+    <div class="row">
+        <div
+            *ngFor="let tour of tours"
+            class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <div class="card  bg-card card-has-bg click-col scrollbutton" [style.backgroundImage]="'url(' + tour.img + ')'">
+                <div class="card-img-overlay d-flex flex-column">
+                <div class="card-body">
+                    <small class="card-meta mb-2">{{tour.place}}</small>
+                    <h4 class="card-title ">
+                        <small><i class="far fa-clock"></i> {{tour.tourDate}}</small>
+                    </h4>
+                </div>
+                <div class="card-footer">
+                    <button type="button"
+                    routerLink="{{tour.id}}"
+                    class="explore_more_btn">Explore More</button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+  </div>
+
+  </div>
+  </section>

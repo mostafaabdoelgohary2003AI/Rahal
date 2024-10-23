@@ -1,0 +1,63 @@
+<section>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Hotel Booking</h1>
+
+        <!-- Governorate Dropdown -->
+        <div class="form-group">
+            <label for="governorate" class="font-weight-bold">Select Governorate:</label>
+            <select class="form-control" id="governorate" (change)="onGovernorateChange($event)">
+                <option value="" disabled selected>Select a governorate</option>
+                <option *ngFor="let gov of governorates" [value]="gov">{{ gov }}</option>
+            </select>
+        </div>
+
+        <!-- Hotels Display -->
+        <div class="row mt-4">
+            <div class="col-md-4 mb-4" *ngFor="let hotel of hotels">
+                <div class="card shadow-sm">
+                    <div class="imge">
+                        <img [src]="hotel.imageUrl" class="card-img-top" alt="Hotel Image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">{{ hotel.name }}</h5>
+                        <!-- Hotel Star Rating -->
+                        <p class="card-text">
+                            <span *ngFor="let star of [].constructor(hotel.stars)">
+                                <i class="fas fa-star star-icon"></i>
+                            </span>
+                        </p>
+                        <button class="btn btn-primary" (click)="openHotelDetails(hotel)">Booking & Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hotel Details Modal -->
+        <div *ngIf="showHotelDetails" class="modal-backdrop">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content popover-container">
+                    <div class="modal-header">
+                        <h5 class="modal-title">{{ selectedHotel?.name }}</h5>
+                        <button class="close-btn" (click)="closeHotelDetails()">×</button>
+                    </div>
+                    <div class="modal-body popover-body">
+                        <img [src]="selectedHotel?.imageUrl" alt="Hotel Image"
+                            class="img-fluid rounded mb-3 hotel-image">
+                        <div class="popover-description">
+                            <p>{{ selectedHotel?.description }}</p>
+                        </div>
+                        <!-- Hotel Star Rating in Modal -->
+                        <p class="font-weight-bold">
+                            <span *ngFor="let star of [].constructor(selectedHotel?.stars)">
+                                <i class="fas fa-star star-icon"></i>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn book-btn" (click)="redirectToBooking()">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
