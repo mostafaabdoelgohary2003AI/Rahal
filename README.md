@@ -50,7 +50,7 @@
 
 ###
 
-<h2 align="left">How to install and deploy ... ?</h2>
+<h1 align="left">How to install and deploy ... ?</h1>
 
 ###
 
