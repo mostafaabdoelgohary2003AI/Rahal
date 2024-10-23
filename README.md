@@ -36,7 +36,7 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/mostafaabdoelgohary2003AI/mostafaabdoelgohary2003AI/output/snake.svg" alt="Snake animation" />
+<img src="https://raw.githubusercontent.com/mostafaabdoelgohary2003AI/Ra7al-Tourist-Website/5afeaf01b371cc5a9aa4517ebb43d1cfde245f54/snake.svg" alt="Snake animation" />
 
 ###
 
