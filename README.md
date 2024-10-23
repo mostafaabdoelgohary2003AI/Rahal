@@ -12,13 +12,14 @@
 
 <p align="left">
 <ul>
-  <li><span style="color: goldenrod;"></span> <strong> Destination Exploration: Browse through a wide range of Egyptian destinations, each with detailed descriptions, images, and relevant information. </strong></li>
+  <li>
+  <span style="color: goldenrod;"></span> <strong> Destination Exploration: </strong>Browse through a wide range of Egyptian destinations, each with detailed descriptions, images, and relevant information.</li>
   <br>
-  <li><span style="color: goldenrod;"></span> <strong> Attraction Search: Discover popular tourist attractions, including historical sites, museums, natural wonders, and cultural experiences. </strong></li>
+  <li><span style="color: goldenrod;"></span> <strong> Attraction Search: </strong>Discover popular tourist attractions, including historical sites, museums, natural wonders, and cultural experiences. </li>
   <br>
-  <li><span style="color: goldenrod;"></span> <strong> Accommodation Booking: Easily search for and book hotels, resorts, and other accommodation options tailored to your preferences and budget. </strong></li>
+  <li><span style="color: goldenrod;"></span> <strong> Accommodation Booking: </strong>Easily search for and book hotels, resorts, and other accommodation options tailored to your preferences and budget. </li>
   <br>
-  <li><span style="color: goldenrod;"></span> <strong> Tour Packages: Explore pre-planned tour packages that cover different regions and interests, providing convenient travel itineraries. </strong></li>
+  <li><span style="color: goldenrod;"></span> <strong> Tour Packages: </strong>Explore pre-planned tour packages that cover different regions and interests, providing convenient travel itineraries. </li>
 </ul>
 
 ###
@@ -36,7 +37,7 @@
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
   <img width="12" />
-  <img src="https://drive.google.com/file/d/1ZmmVw0qDbWwTNyvVB_OzGfwa0ql8ZrhP/view?usp=drive_link" height="40" alt="angularjs logo"  />
+  <img src="https://angular.dev/assets/images/press-kit/angular_icon_gradient.gif" height="40" alt="angularjs logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
   <img width="12" />
