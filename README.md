@@ -1,3 +1,50 @@
+<h1 align="left">Raحal Travel Website</h1>
+
+###
+
+<p align="left">A comprehensive Egyptian travel website designed to promote tourism in Egypt. This platform offers a user-friendly interface for exploring various destinations, attractions, accommodations, and tour packages within the country.</p>
+
+###
+
+<h2 align="left">Key Features:</h2>
+
+###
+
+<p align="left">- Destination Exploration: Browse through a wide range of Egyptian destinations, each with detailed descriptions, images, and relevant information.<br><br>- Attraction Search: Discover popular tourist attractions, including historical sites, museums, natural wonders, and cultural experiences.<br><br>- Accommodation Booking: Easily search for and book hotels, resorts, and other accommodation options tailored to your preferences and budget.<br><br>- Tour Packages: Explore pre-planned tour packages that cover different regions and interests, providing convenient travel itineraries.</p>
+
+###
+
+<h2 align="left">Software used:</h2>
+
+###
+
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="40" alt="angularjs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+</div>
+
+###
+
+<img src="https://raw.githubusercontent.com/mostafaabdoelgohary2003AI/mostafaabdoelgohary2003AI/output/snake.svg" alt="Snake animation" />
+
+###
+
+<h2 align="left">How to install and deploy ... ?</h2>
+
+###
+
+
 # Rahal
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
